@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-outfit), ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+  
+  .container-max {
+    @apply max-w-7xl mx-auto px-4 md:px-6;
+  }
+
+  .nav-blur {
+    @apply bg-white/70 backdrop-blur-md;
+  }
+}
